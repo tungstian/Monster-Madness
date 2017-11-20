@@ -1,0 +1,30 @@
+$heading: 'Luckiest Guy', cursive;
+$copy: 'Roboto', sans-serif;
+
+h1 {
+  font-family: $heading;
+  font-size: 6rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-top: 15px;
+}
+
+h2 {
+  font-family: $heading;
+  color: $pink;
+  font-size: 3.5rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+.score {
+  font-family: $copy;
+  font-size: 2rem;
+  position: absolute;
+}
+
+p, a {
+  font-family: $copy;
+  font-size: 1.4rem;
+}

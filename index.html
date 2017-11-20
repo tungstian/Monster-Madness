@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Monster Match!</title>
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css"/>
+</head>
+<body>
+
+  <div class="appWrapper">
+
+    <header>
+      <nav class="navWrapper">
+
+        <div class="heading">
+          <h1>Monster Match!</h1>
+        </div>
+
+        <div class="instructions">
+          <a href="#" id="new2dis" class="button animate open bodyButton">Instructions</a>
+        </div>
+
+      </nav>
+    </header>
+
+    <section id="instructions" class="modal instructions hidden">
+      <div class="instructionsWrap">
+        <h2>Here's how to play</h2>
+
+        <p>Match the monsters hiding underneath the cards!</p>
+
+        <a href="#" class="button animate shake bodyButton" id="close">Ok, got it!</a>
+      </div>
+    </section>
+
+
+    <div id="g" class="content-container">
+      <main class="gameArea">
+        <ul></ul>
+      </main>
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

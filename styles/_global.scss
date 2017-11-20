@@ -1,0 +1,59 @@
+$pink: #D81B60;
+$purple: #5E35B1;
+$blue: #1E88E5;
+$teal: #0097A7;
+$blueShadow: darken($blue,15%);
+$purpleShadow: darken($purple,10);
+$grey: #ededed;
+$darkgrey: #BFBFBF;
+
+body {
+  font-size: 62.5%;
+  .animate  {
+    transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .button {
+    position:relative;
+    width: auto;
+    display:inline-block;
+    color: white;
+    text-decoration:none;
+    border-radius:10px;
+    border:solid 1px $purpleShadow;
+    background:$purple;
+    text-align:center;
+    padding:10px 30px;
+    margin: 12px;
+
+    -webkit-transition: all 0.1s;
+  	-moz-transition: all 0.1s;
+  	transition: all 0.1s;
+
+    -webkit-box-shadow: 0px 6px 0px $purpleShadow;
+    -moz-box-shadow: 0px 6px 0px $purpleShadow;
+    box-shadow: 0px 6px 0px $purpleShadow;
+    &:hover, &:focus {
+      background-color: $blue;
+      -webkit-box-shadow: 0px 6px 0px $blueShadow;
+      -moz-box-shadow: 0px 6px 0px $blueShadow;
+      box-shadow: 0px 6px 0px $blueShadow;
+      border:solid 1px $blueShadow;
+      outline: none;
+    }
+    &:active &:hover, &:focus {
+      background-color: $blue;
+      -webkit-box-shadow: 0px 2px 0px $blueShadow;
+      -moz-box-shadow: 0px 2px 0px $blueShadow;
+      box-shadow: 0px 2px 0px $blueShadow;
+      position:relative;
+      top:4px;
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.modal {
+  position: absolute;
+	width: 100vw;
+  height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	margin: 0 auto;
+  background: rgba(255,255,255,0.8);
+  z-index: 10;
+}
+
+#instructions {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 25vh;
+  .instructionsWrap {
+    width: 800px;
+    height: 60%;
+    margin: 0 auto;
+    p.last {
+      margin-bottom: 45px;
+    }
+  }
+}

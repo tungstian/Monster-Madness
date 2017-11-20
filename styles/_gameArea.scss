@@ -1,0 +1,88 @@
+// Cards
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  // height: 100vh;
+  width: 100vw;
+  main {
+  width: 90vw;
+  height: 70vh;
+  margin: 0 auto;
+  padding-top: 40px;
+    ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    // height: 80vh;
+    border-radius: 10px;
+    margin: 0 auto;
+    li {
+      // width: calc(20% - 10px);
+      // width: 200px;
+      height: 200px;
+      border-radius: 10px;
+      margin: 5px;
+      img {
+        max-width: 80%;
+        margin: auto;
+        }
+      }
+    }
+  }
+}
+
+#g {
+  margin-top:10px
+}
+
+.flip-container {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  width: 200px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+.flip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200;
+  height: 200px;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+div.back {
+  background-color: $grey;
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: 5;
+  height: 200px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+div.front {
+  z-index: -2;
+  background: $darkgrey;
+  border-radius: 10px;
+}
+
+.matched .flip-container, .flipped {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
